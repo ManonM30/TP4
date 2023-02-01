@@ -128,24 +128,25 @@ class Node():
                 max_depth = self.left.get_max_depth(max_depth)
             return max_depth
 
+if __name__=="__main__": 
 
-node1 = Node(0)
-node2 = Node(2)
-node3 = Node(3)
-node4 = Node(4)
-node5 = Node(5)
-node6 = Node(6)
-node7 = Node(7)
-node8 = Node(8)
-node3.add(node4)
-node1.add(node2, node3)
-node5.add(node6, node7)
-node4.add(node5)
-node7.add(node8)
+    node1 = Node(0)
+    node2 = Node(2)
+    node3 = Node(3)
+    node4 = Node(4)
+    node5 = Node(5)
+    node6 = Node(6)
+    node7 = Node(7)
+    node8 = Node(8)
+    node3.add(node4)
+    node1.add(node2, node3)
+    node5.add(node6, node7)
+    node4.add(node5)
+    node7.add(node8)
 
 
-tree1=BinaryTree()
-tree1.root=node1
+    tree1=BinaryTree()
+    tree1.root=node1
 
-tree1.print_tree()
-tree1.print_tree_facultatif()
+    tree1.print_tree()
+    tree1.print_tree_facultatif()
